@@ -30,3 +30,5 @@ BOOL LoadDriver(LPWSTR szPath, LPWSTR szServiceName);
 /// <param name="szServiceName"></param>
 /// <returns></returns>
 BOOL UnloadDriver(LPWSTR szDriverPath, LPWSTR szServiceName);
+
+

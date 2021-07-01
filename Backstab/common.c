@@ -3,8 +3,18 @@
 #include "Driverloading.h"
 
 BOOL Error(LPSTR szMethod) {
-	printf("%s: %d\n", szMethod, GetLastError());
+	printf("[!] %s: %d\n", szMethod, GetLastError());
 	return FALSE;
+}
+
+BOOL Success(LPSTR szMethod) {
+	printf("[+] %s\n", szMethod);
+	return TRUE;
+}
+
+BOOL Info(LPSTR szMethod) {
+	printf("[*] %s\n", szMethod);
+	return TRUE;
 }
 
 PVOID GetLibraryProcAddress(LPSTR szLibraryName, LPSTR szProcName)
